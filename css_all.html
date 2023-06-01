@@ -55,6 +55,53 @@
             .font_family{
                 font-family: "標楷體";
             }
+        /* Link連結 */
+            /* 未訪問 */
+            .a_css:link{
+                color:red
+            }
+            /* 訪問過 */
+            .a_css:visited{
+                color:green
+            }
+            /* 移入 */
+            .a_css:hover{
+                color: yellow;
+            }
+            /*點下去 */
+            .a_css:active{
+                color: blueviolet;
+            }
+        /* List列表 */
+            .ol_list{
+                /* 類型 */
+                /* list-style-type: none；*/
+                list-style-type: upper-roman;
+                /* 位置 */
+                list-style-position: inside;
+                /* 圖片 */
+                list-style-image: url('happy.png')
+
+            }
+        /* Table表格 */
+            /* 邊框合併 */
+            .table_css{
+                border-collapse: collapse;
+            }
+            td{
+                /*水平*/
+                text-align: center;
+                /*垂直*/
+                vertical-align: bottom;
+            }
+            /* 偶數行 */
+            tr:nth-child(even){
+                color: red;
+            }
+            /* 奇數行 */
+            tr:nth-child(odd){
+                color:blue
+            }
     </style>
 </head>
 <body>
@@ -64,5 +111,35 @@
 <div class="font_style font_weight font_size font_family">
     Font字型
   </div>
+  <div>
+      <a href="#" class="a_css">Link連結</a>
+      <a href="#abc" class="a_css">Link連結2</a>
+      <a href="#def" class="a_css">Link連結3</a>
+  </div>
+  <div>
+      <ol class="ol_list">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+      </ol>
+  </div>
+  <table class="table_css" border="1"cellpadding="0" cellspacing="0" width="300" height="300">
+<tr>
+       <td>1</td>
+       <td>2</td>
+       <td>3</td>
+</tr>
+<tr>
+       <td>1</td>
+       <td>2</td>
+       <td>3</td>
+</tr>
+<tr>
+       <td>1</td>
+       <td>2</td>
+       <td>3</td>
+   </tr>
 </body>
 </html>
